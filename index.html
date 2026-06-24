@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Awais Raza Qadri · Next-Gen Systems Architect</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <div id="vanta-bg"></div>
+    <div class="cyber-grid-overlay"></div>
+    <div class="ambient-glow"></div>
+
+    <a href="AWAIS RAZA QADRI.pdf" download class="floating-resume-fab" aria-label="Download Resume">
+        <i class="fa-solid fa-file-arrow-down"></i>
+        <span class="fab-pulse"></span>
+    </a>
+
+    <main class="content-wrapper">
+        
+        <nav class="nav-container" id="navbar">
+            <div class="nav-logo-group">
+                <div class="logo-node"></div>
+                <span class="nav-logo">AWAIS RAZA <span class="accent-terminal">_QADRI</span></span>
+            </div>
+            
+            <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle Navigation Matrix">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-item"><span class="nav-num">01.</span> Core</a></li>
+                <li><a href="#about" class="nav-item"><span class="nav-num">02.</span> Architecture</a></li>
+                <li><a href="#skills" class="nav-item"><span class="nav-num">03.</span> Firepower</a></li>
+                <li><a href="#experience" class="nav-item"><span class="nav-num">04.</span> Operations</a></li>
+                <li><a href="#education" class="nav-item"><span class="nav-num">05.</span> History</a></li>
+                <li><a href="#contact" class="nav-item"><span class="nav-num">06.</span> Link</a></li>
+            </ul>
+        </nav>
+
+        <section id="hero" class="hero-stage">
+            <div class="hero-content">
+                <div class="hero-text-block">
+                    <div class="cyber-badge animate-init">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">SYSTEM CORE: OPERATIONAL</span>
+                    </div>
+                    <h1 class="hero-title animate-init">
+                        Engineering The <br>
+                        <span class="glitch-text" data-text="Digital Ecosystem.">Digital Ecosystem.</span>
+                    </h1>
+                    <h2 class="hero-subtitle animate-init">
+                        <span class="terminal-prompt">&gt;</span> <span id="typed-text"></span><span class="typing-cursor">█</span>
+                    </h2>
+                    <p class="hero-description animate-init">
+                        Architecting ultra-high performance full-stack environments. Specializing in containerized deployment matrixes, deterministic database normalization, and automated AI asset workflows.
+                    </p>
+                    <div class="action-matrix animate-init">
+                        <a href="#contact" class="btn btn-prime">
+                            <span class="btn-text">Initiate Connection</span>
+                            <span class="btn-icon"><i class="fa-solid fa-network-wired"></i></span>
+                        </a>
+                        <a href="#experience" class="btn btn-ghost">
+                            <span>Inspect Logs</span>
+                        </a>
+                        <a href="AWAIS RAZA QADRI.pdf" download class="btn btn-accent pulse-glow">
+                            <i class="fa-solid fa-file-pdf"></i> <span>Résumé</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-avatar-viewport animate-init">
+                    <div class="avatar-frame">
+                        <div class="radar-line"></div>
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                        <div class="img-wrapper">
+                            <img src="1.jpeg" alt="Awais Raza Qadri" class="avatar-element" onerror="this.src='https://images.unsplash.com/photo-1618401471353-b98aedd07871?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroller-anchor">
+                <div class="mouse-icon"><div class="mouse-wheel"></div></div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-header">
+                <div class="section-tag">02 / CORE PHILOSOPHY</div>
+                <h2 class="section-title">System Architecture</h2>
+            </div>
+            <div class="cyber-card glass-panel tilt-element">
+                <div class="card-glow"></div>
+                <div class="cyber-card-inner">
+                    <div class="terminal-header-bar">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                        <span class="terminal-title-text">kernel_profile.sys</span>
+                    </div>
+                    <div class="profile-layout">
+                        <p class="profile-statement">
+                            <span class="syntax-keyword">const</span> <span class="syntax-var">developer</span> = {<br>
+                            &nbsp;&nbsp;role: <span class="syntax-str">"Junior Full-Stack Developer"</span>,<br>
+                            &nbsp;&nbsp;capabilities: [<span class="syntax-str">"HTML"</span>, <span class="syntax-str">"CSS"</span>, <span class="syntax-str">"JavaScript"</span>, <span class="syntax-str">"JSON"</span>, <span class="syntax-str">"React"</span>],<br>
+                            &nbsp;&nbsp;backend_architecture: <span class="syntax-str">"Python & Django Ecosystems"</span><br>
+                            };
+                        </p>
+                        <p class="profile-narrative">
+                            Engineered to balance high-speed client interactions with bulletproof infrastructure assets. Adept at relational management via structured MySQL databases, runtime environmental isolation using Docker ecosystems, and utilizing advanced pipeline prompt engineering layouts to compress development loops.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-header">
+                <div class="section-tag">03 / CAPABILITIES ENGINE</div>
+                <h2 class="section-title">Technical Firepower</h2>
+            </div>
+            <div class="firepower-grid">
+                
+                <div class="cyber-card glass-panel tilt-element dynamic-trigger">
+                    <div class="cyber-card-inner">
+                        <div class="card-icon-header">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <h3>Frontend Interface Layer</h3>
+                        </div>
+                        <div class="firepower-tags">
+                            <div class="f-tag master-tier"><span class="tag-glow-dot"></span>HTML5 / CSS3</div>
+                            <div class="f-tag master-tier"><span class="tag-glow-dot"></span>JavaScript (ES6+)</div>
+                            <div class="f-tag master-tier"><span class="tag-glow-dot"></span>React.js</div>
+                            <div class="f-tag"><span class="tag-glow-dot"></span>JSON Matrix</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cyber-card glass-panel tilt-element dynamic-trigger">
+                    <div class="cyber-card-inner">
+                        <div class="card-icon-header">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Backend & DevOps Infrastructure</h3>
+                        </div>
+                        <div class="firepower-tags">
+                            <div class="f-tag master-tier"><span class="tag-glow-dot"></span>Python Ecosystem</div>
+                            <div class="f-tag master-tier"><span class="tag-glow-dot"></span>Django Architecture</div>
+                            <div class="f-tag"><span class="tag-glow-dot"></span>MySQL Relational</div>
+                            <div class="f-tag"><span class="tag-glow-dot"></span>Docker Core</div>
+                            <div class="f-tag"><span class="tag-glow-dot"></span>Apache Server</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cyber-card glass-panel tilt-element dynamic-trigger">
+                    <div class="cyber-card-inner">
+                        <div class="card-icon-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>AI Models & Modern Toolchains</h3>
+                        </div>
+                        <div class="firepower-tags">
+                            <div class="f-tag master-tier"><span class="tag-glow-dot"></span>GitHub Copilot</div>
+                            <div class="f-tag master-tier"><span class="tag-glow-dot"></span>Anthropic Intelligence</div>
+                            <div class="f-tag"><span class="tag-glow-dot"></span>Open AI Engines</div>
+                            <div class="f-tag"><span class="tag-glow-dot"></span>Cursor IDE Matrix</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="section-header">
+                <div class="section-tag">04 / FIELD DEPLOYMENTS</div>
+                <h2 class="section-title">Engineering Experience</h2>
+            </div>
+            <div class="linear-timeline">
+                
+                <div class="timeline-node dynamic-trigger">
+                    <div class="node-indicator"></div>
+                    <div class="cyber-card glass-panel">
+                        <div class="cyber-card-inner">
+                            <div class="node-meta">
+                                <div class="node-main-info">
+                                    <h4>Software Management & AI-Assisted Dev Assistant</h4>
+                                    <h5>BrainWave Labs</h5>
+                                </div>
+                                <div class="node-date-badge">Nov 2025 – Present</div>
+                            </div>
+                            <ul class="deployment-logs">
+                                <li>Collaborated directly on continuous software optimization matrices, maintaining strict operational metrics and platform system uptimes.</li>
+                                <li>Integrated next-gen AI-assisted software engines into processing sandboxes, drastically accelerating code verification and execution cycles.</li>
+                                <li>Executed agile project development loops, boosting baseline target sprint velocities by <span class="text-highlight">35%</span>.</li>
+                                <li>Utilized localized Docker isolation and pristine MySQL environments to replicate, decouple, and neutralize application bugs by <span class="text-highlight">30%</span>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-node dynamic-trigger">
+                    <div class="node-indicator"></div>
+                    <div class="cyber-card glass-panel">
+                        <div class="cyber-card-inner">
+                            <div class="node-meta">
+                                <div class="node-main-info">
+                                    <h4>Computer Operator Operations</h4>
+                                    <h5>InfoTech Institute Talagang</h5>
+                                </div>
+                                <div class="node-date-badge">Jan 2025 – Jun 2025</div>
+                            </div>
+                            <ul class="deployment-logs">
+                                <li>Completed an intensive 6-month specialized technical authorization path covering secure system administration, operational desktop architecture layout, and digital asset lifecycle management paths.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="section-header">
+                <div class="section-tag">05 / KNOWLEDGE COMPILATION</div>
+                <h2 class="section-title">Academic History</h2>
+            </div>
+            <div class="linear-timeline">
+                
+                <div class="timeline-node dynamic-trigger">
+                    <div class="node-indicator"></div>
+                    <div class="cyber-card glass-panel">
+                        <div class="cyber-card-inner">
+                            <div class="node-meta">
+                                <div class="node-main-info">
+                                    <h4>Bachelor of Information Technology (BSIT)</h4>
+                                    <h5>Virtual University of Pakistan</h5>
+                                </div>
+                                <div class="node-date-badge font-accent">2026 – Present</div>
+                            </div>
+                            <p class="academic-note">Actively accumulating deep conceptual computing blocks including object configurations, data structuring patterns, advanced algos, and modern engineering delivery protocols.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-node dynamic-trigger">
+                    <div class="node-indicator"></div>
+                    <div class="cyber-card glass-panel">
+                        <div class="cyber-card-inner">
+                            <div class="node-meta">
+                                <div class="node-main-info">
+                                    <h4>Intermediate (Pre-Engineering Matrix)</h4>
+                                    <h5>Cambridge International Science College Talagang</h5>
+                                </div>
+                                <div class="node-date-badge">2023 – 2025</div>
+                            </div>
+                            <p class="academic-note">Graduated with a final certified ratio of <span class="text-highlight">72% (Grade A Allocation)</span> structured under precise BISE Rawalpindi parameters.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-node dynamic-trigger">
+                    <div class="node-indicator"></div>
+                    <div class="cyber-card glass-panel">
+                        <div class="cyber-card-inner">
+                            <div class="node-meta">
+                                <div class="node-main-info">
+                                    <h4>Matriculation (Computer Science Directives)</h4>
+                                    <h5>Allied School Jhangi Syedan, Islamabad</h5>
+                                </div>
+                                <div class="node-date-badge">2021 – 2023</div>
+                            </div>
+                            <p class="academic-note">Completed core secondary education pathways achieving <span class="text-highlight">84% (Grade A+ Execution)</span> under federal FBISE parameters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-header">
+                <div class="section-tag">06 / NETWORK INTERFACE</div>
+                <h2 class="section-title">Secure Secure Connection</h2>
+            </div>
+            <div class="cyber-card glass-panel dynamic-trigger centralize-content">
+                <div class="cyber-card-inner network-card">
+                    <div class="pulse-radar-container">
+                        <div class="radar-ping"></div>
+                        <div class="radar-ping second"></div>
+                        <i class="fa-solid fa-satellite-dish radar-icon"></i>
+                    </div>
+                    <p class="network-prompt">Awaiting incoming handshake verification protocols. Select a secure target route to initiate communications.</p>
+                    <div class="communication-channels">
+                        <a href="mailto:awaisrazaqadri.741422@gmail.com" class="channel-portal link-email">
+                            <span class="portal-icon"><i class="fa-solid fa-envelope-open-text"></i></span>
+                            <span class="portal-label">E-Mail Interface</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/awais-raza-qadri" target="_blank" class="channel-portal link-linkedin">
+                            <span class="portal-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <span class="portal-label">LinkedIn Protocol</span>
+                        </a>
+                        <a href="https://wa.me/923359803167" target="_blank" class="channel-portal link-whatsapp">
+                            <span class="portal-icon"><i class="fa-brands fa-whatsapp"></i></span>
+                            <span class="portal-label">WhatsApp Channel</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="cyber-footer">
+            <div class="footer-divider"></div>
+            <p class="footer-text">© 2026 Awais Raza Qadri. System Core Engineered dynamically using premium pixel matrices.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
