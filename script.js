@@ -244,7 +244,7 @@ const isFinePointer = window.matchMedia("(pointer: fine)").matches
 })()
 
 /* ----------------------------------------------------------
-   6. ACTIVE NAV LINK HIGHLIGHT
+   6. ACTIVE NAV LINK HIGHLIGHT (IntersectionObserver)
 ---------------------------------------------------------- */
 ;(() => {
   const sections = document.querySelectorAll("section[id]")
@@ -268,4 +268,32 @@ const isFinePointer = window.matchMedia("(pointer: fine)").matches
     { threshold: 0.5 }
   )
   sections.forEach((s) => io.observe(s))
+})()
+
+/* ============================================================
+   ✨ FIX: Prevent full-page reload on nav link clicks
+   ============================================================ */
+;(() => {
+  const navLinks = document.querySelectorAll('.nav-link[href^="#"]')
+  navLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault()
+      const targetId = link.getAttribute('href')
+      if (!targetId) return
+      const target = document.querySelector(targetId)
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        // Update URL without reloading (optional)
+        history.pushState(null, '', targetId)
+      }
+      // Close mobile menu if open
+      const menuBtn = document.getElementById('menuBtn')
+      const navLinksContainer = document.getElementById('navLinks')
+      if (menuBtn && navLinksContainer) {
+        navLinksContainer.classList.remove('open')
+        menuBtn.classList.remove('open')
+        menuBtn.setAttribute('aria-expanded', 'false')
+      }
+    })
+  })
 })()
